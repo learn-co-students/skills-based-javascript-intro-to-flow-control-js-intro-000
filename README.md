@@ -1,4 +1,4 @@
-# Flow Control and Conditional Logic in JavaScript
+# JavaScript Flow Control
 
 ## Overview
 
