@@ -12,7 +12,7 @@
 
 ## About
 
-Flow Control allows the excution of code only under certain conditions.
+Flow Control allows the excution of code only under certain conditions. In Ruby, we used case statments, if statments, if/else statements, if/elsif/else statements, ternary operators, and case statements to control what code runs when. JavaScript has similar methods to control what blocks of code to execute: if statements, if/else statements, if/else if/else statements, ternary operators, and switch statements.
 
 ## If Statements
 
@@ -68,7 +68,9 @@ if (num < 10) {
 
 ## If/Else if/Else Statements
 
-`if` statements can also be combined with an `else if` clause. This is like an else statement, but with its own condition. It will only run if its condition is true, and the previous statement's condition was false.
+`if` statements can also be combined with an `else if` clause. This is like an else statement, but with its own condition. It will only run if its condition is true, and the previous statement's condition was false. 
+
+Note: An important thing to keep in mind when transitioning to JavaScript from Ruby is that the `elsif` becomes two full words: `else if`.
 
 Syntax:
 
@@ -100,12 +102,23 @@ if (num < 10) {
 
 ## Ternary Operator
 
-The ternary operator is used as a shortcut for the `if-else` statement. This operator tests a condition; if the condition is true, it returns a certain value, otherwise it returns a different value:
+The ternary operator is used as a shortcut for the `if-else` statement. You've probably seen it before in Ruby looking something like this:
+
+```ruby
+cart = ["graphic t-shirt", "aluminum water bottle"]
+
+puts cart.empty? ? "Please add something to your cart." : "You're ready to check out." 
+
+# Above prints:
+# You're ready to check out.
+```
+
+This operator tests a condition; if the condition is true, it returns a certain value, otherwise it returns a different value:
 
 Syntax:
 
 ```javascript
-  conditionToTest ? valueToBeReturnedIfTrue : valueToBeReturnedIfFalse
+conditionToTest ? valueToBeReturnedIfTrue : valueToBeReturnedIfFalse
 ```
 
 Example:
@@ -135,12 +148,55 @@ switch (expression) {
 }
 ```
   
-Example:
+First Example:
 
 ```javascript
-// todo
+var diet = "vegetarian";
+
+switch (diet) {
+  case "vegetarian":
+    console.log("Where do you get your protein? :P ");
+  case "gluten free":
+    console.log("Wow, that eliminates all the best foods! :( ");
+  default:
+    console.log("Sounds like you're an omnivore.");
+}
+
+// Output:
+// Where do you get your protein? :P 
+// Wow, that eliminates all the best foods! :( 
+// Sounds like you're an omnivore.
+
+// Why????
+// Because no breaking statement is found it executes all of the cases after the true case (which is case 1)
+```
+
+Second Example:
+
+```javascript
+var diet = "vegetarian";
+
+switch (diet) {
+  case "vegetarian":
+    console.log("Where do you get your protein? :P ");
+  case "gluten free":
+    console.log("Wow, that eliminates all the best foods! :( ");
+    break;
+  default:
+    console.log("Sounds like you're an omnivore.");
+}
+
+// Output:
+// Where do you get your protein? :P 
+// Wow, that eliminates all the best foods! :( 
+
+// Why????
+// Because break statement is found at the second case so execution stops there
 ```
 
 ## Resources
 
-* []()
+* [Codecademy - if/if else/if else if else](http://www.codecademy.com/glossary/javascript/if-statement)
+* [MDN - if..else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
+* [Codecademy - Ternary Operator](http://www.codecademy.com/glossary/javascript/ternary-operator)
+* [Codecademy - Switch Statements](http://www.codecademy.com/glossary/javascript/switch-statements)
