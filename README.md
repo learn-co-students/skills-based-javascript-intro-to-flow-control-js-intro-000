@@ -7,12 +7,12 @@
 * If/Else Statements
 * If/Else if/Else Statements
 * Ternary Operators
-* Switch Statments
+* Switch Statements
 * Resources
 
 ## About
 
-Flow Control allows the excution of code only under certain conditions. In Ruby, we used case statments, if statments, if/else statements, if/elsif/else statements, ternary operators, and case statements to control what code runs when. JavaScript has similar methods to control what blocks of code to execute: if statements, if/else statements, if/else if/else statements, ternary operators, and switch statements.
+Flow Control allows the execution of code only under certain conditions. In Ruby, we used case statements, if statements, if/else statements, if/elsif/else statements, ternary operators, and case statements to control what code runs when. JavaScript has similar methods to control what blocks of code to execute: if statements, if/else statements, if/else if/else statements, ternary operators, and switch statements.
 
 ## If Statements
 
@@ -46,7 +46,7 @@ Syntax:
 
 ```javascript
 if (conditionToTestIsTrue) {
-  // codition is false hence code is not executed
+  // condition is false hence code is not executed
 } else {
   // code to be executed because previous `if` condition is false
 }
@@ -76,11 +76,11 @@ Syntax:
 
 ```javascript
 if (conditionToTestIsTrue){
-    // codition is false hence code is not executed
-} else if (thisCondionIsTrue) {
-  // excute this code if previous `if` statement is false
+    // condition is false hence code is not executed
+} else if (thisConditionIsTrue) {
+  // execute this code if previous `if` statement is false
 } else {
-  // excute this code if the 2 conditions above are false
+  // execute this code if the 2 conditions above are false
 }
 ```
 
