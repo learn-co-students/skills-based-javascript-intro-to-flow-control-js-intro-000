@@ -200,3 +200,5 @@ switch (diet) {
 * [MDN - if..else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
 * [Codecademy - Ternary Operator](http://www.codecademy.com/glossary/javascript/ternary-operator)
 * [Codecademy - Switch Statements](http://www.codecademy.com/glossary/javascript/switch-statements)
+
+<a href='https://learn.co/lessons/intro-to-flow-control.js' data-visibility='hidden'>View this lesson on Learn.co</a>
