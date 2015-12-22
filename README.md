@@ -15,9 +15,9 @@ You'll be writing your code in `js/flow-control.js`. Make sure to run the tests 
 
 ## If Statements
 
-Evaluates the code wrapped in parenthesis to either true or false. If `true`, the code block is executed: 
+An if statement evaluates the code wrapped in parenthesis to either true or false. If `true`, the code block is executed. If false, nothing is executed.
 
-Syntax:
+JS Syntax:
 
 ```javascript
 if (conditionToTestIsTrue) {
@@ -25,7 +25,7 @@ if (conditionToTestIsTrue) {
 }
 ```
 
-+ Write a function `basicTeenager` that accepts an age as a parameter. The function should contain an if-statement that checks to see if the age is a teenager. If the age is a teenager, it should return `"You're a teenager!"`
+Now, in `flow-control.js` let's write a function `basicTeenager` that accepts an age as a parameter. The function should contain an if-statement that checks to see if the age is a teenager. If the age is a teenager, it should return `"You're a teenager!"`
 
 ## If/Else Statements
 
@@ -37,7 +37,7 @@ Syntax:
 if (conditionToTestIsTrue) {
   // condition is false hence code is not executed
 } else {
-  // code to be executed because previous `if` condition is false
+  // code to be executed because previous condition is false
 }
 ```
 
@@ -55,7 +55,7 @@ Syntax:
 if (conditionToTestIsTrue){
     // condition is false hence code is not executed
 } else if (thisConditionIsTrue) {
-  // execute this code if previous `if` statement is false
+  // execute this code if previous statement is false
 } else {
   // execute this code if the 2 conditions above are false
 }
