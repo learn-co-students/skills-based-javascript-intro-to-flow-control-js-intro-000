@@ -24,7 +24,7 @@ if (conditionToTestIsTrue) {
 }
 ```
 
-Now, in `flow-control.js` let's write a function `basicTeenager` that accepts an age as a parameter. The function should contain an if-statement that checks to see if the age is a teenager. If the age is a teenager, it should return `"You're a teenager!"`
+Now, in `flow-control.js` let's write a function `basicTeenager` that accepts an age as a parameter. The function should contain an if-statement that checks to see if the age is a teenager. If the age is a teenager, it should return `"You are a teenager!"`
 
 ## If/Else Statements
 
@@ -42,7 +42,7 @@ if (conditionToTestIsTrue) {
 
 + Define a function `teenager` that accepts an age as a parameter. If the age is between 13-19 it should return `"You are a teenager!"`. Otherwise, the function should return `"You are not a teenager"`.
 
-## If/Else if/Else Statements
+## If/Else If Statements
 
 `if` statements can also be combined with an `else if` clause. This is like an else statement, but with its own condition. It will only run if its condition is true, and the previous statement's condition was false. 
 
