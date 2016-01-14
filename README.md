@@ -104,6 +104,30 @@ switch (expression) {
       // code to be executed if case n and case m false
 }
 ```
+
+Example:
+
+```js
+var mood = "hungry"
+switch(mood){
+  case "happy":
+    console.log("Dance to Pharrel's Happy");
+    break;
+  case "sad":
+    console.log("You should eat a pint of icecream");
+    break;
+  case "anxious":
+    console.log("Take some deep breaths");
+    break;
+  case "hungry":
+    console.log("You should eat a big chocolate cake");
+    break;
+  default: 
+    console.log("That's not a mood we support");
+}
+```
+
+In the example above, we'll see `"You should eat a big chocolate cake"` printed to the console. If we change the value of the `mood` variable to `sad` you'll see `"You should eat a pint of icecream"`. If the value of `mood` changed to `"grumpy"`, the default statement would trigger and print out `"That's not a mood we support"`.
   
 + Define a function `switchAge` that accepts an age as a parameter. The case statement should switch on `age` and return `"You are a teenager"` if the age is 13, 14, 15, 16, 17, 18, or 19, and return `"You have an age"` as the default.
 
