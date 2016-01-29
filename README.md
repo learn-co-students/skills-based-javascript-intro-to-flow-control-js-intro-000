@@ -1,24 +1,22 @@
 # JavaScript Flow Control
 
-## Overview
-
-* About
-* If Statements
-* If/Else Statements
-* If/Else if/Else Statements
-* Ternary Operators
-* Switch Statements
-* Resources
+## Objectives
++ Write if-statements in JS
++ Write if-elsif-else statements in JS
++ Use the ternary operator in JS
++ Write switch statements in JS
 
 ## About
 
-Flow Control allows the execution of code only under certain conditions. In Ruby, we used case statements, if statements, if/else statements, if/elsif/else statements, ternary operators, and case statements to control what code runs when. JavaScript has similar methods to control what blocks of code to execute: if statements, if/else statements, if/else if/else statements, ternary operators, and switch statements.
+Flow Control allows the execution of code only under certain conditions. In Ruby, we used if statements, if/else statements, if/elsif/else statements, ternary operators, and case statements to control what code runs when. JavaScript has similar methods to control what blocks of code to execute: if statements, if/else statements, if/else if/else statements, ternary operators, and switch statements.
+
+You'll be writing your code in `js/flow-control.js`. Make sure to run the tests using `learn -b`.
 
 ## If Statements
 
-Evaluates the code wrapped in parenthesis to either true or false. If `true`, the code block is executed: 
+An if statement evaluates the code wrapped in parenthesis to either true or false. If `true`, the code block is executed. If false, nothing is executed.
 
-Syntax:
+JS Syntax:
 
 ```javascript
 if (conditionToTestIsTrue) {
@@ -26,17 +24,7 @@ if (conditionToTestIsTrue) {
 }
 ```
 
-Example:
-
-```javascript
-var num = 7;
-
-if (num < 10) {
-  console.log(num + " is less than ten");
-}
-
-// This will print "7 is less than ten" to the console
-```
+Now, in `flow-control.js` let's write a function `basicTeenager` that accepts an age as a parameter. The function should contain an if-statement that checks to see if the age is a teenager. If the age is a teenager, it should return `"You are a teenager!"`
 
 ## If/Else Statements
 
@@ -48,25 +36,13 @@ Syntax:
 if (conditionToTestIsTrue) {
   // condition is false hence code is not executed
 } else {
-  // code to be executed because previous `if` condition is false
+  // code to be executed because previous condition is false
 }
 ```
 
-Example:
++ Define a function `teenager` that accepts an age as a parameter. If the age is between 13-19 it should return `"You are a teenager!"`. Otherwise, the function should return `"You are not a teenager"`.
 
-```javascript
-var num = 11;
-
-if (num < 10) {
-  console.log(num + " is less than ten");
-} else {
-  console.log(num + " is more than or equal to ten");
-}
-
-// This will print "11 is more than or equal to ten" to the console
-```
-
-## If/Else if/Else Statements
+## If/Else If Statements
 
 `if` statements can also be combined with an `else if` clause. This is like an else statement, but with its own condition. It will only run if its condition is true, and the previous statement's condition was false. 
 
@@ -78,27 +54,13 @@ Syntax:
 if (conditionToTestIsTrue){
     // condition is false hence code is not executed
 } else if (thisConditionIsTrue) {
-  // execute this code if previous `if` statement is false
+  // execute this code if previous statement is false
 } else {
   // execute this code if the 2 conditions above are false
 }
 ```
 
-Example:
-
-```javascript
-var num = 10;
-
-if (num < 10) {
-  console.log(num + " is less than ten");
-} else if (num == 10) {
-  console.log(num + " is equal to ten");
-} else {
-  console.log(num + " is more than ten");
-}
-
-// This will print "10 is equal to ten" to the console
-```
++ Define a function `ageChecker` that takes in an age as a parameter. If the age is between 13-19 it should return `"You are a teenager"`. If the age is 12 or below, it should return `"You are a kid"`. If the age is above 19, it should return `"You are a grownup"`
 
 ## Ternary Operator
 
@@ -121,13 +83,8 @@ Syntax:
 conditionToTest ? valueToBeReturnedIfTrue : valueToBeReturnedIfFalse
 ```
 
-Example:
++ Define a function `ternaryTeenager` that accepts age as a parameter. The body of the function should use the ternary operator to return `"You are a teenager"` if age is between 13-19 and returns `"You are not a teenager"` if the age is anything else.
 
-```javascript
-var num = 7;
-num > 10 ? console.log(num + " is bigger than 10") : console.log(num + " is not bigger than 10");
-// this will print "7 is not bigger than 10"
-```
 
 ## Switch Statements
 
@@ -147,52 +104,33 @@ switch (expression) {
       // code to be executed if case n and case m false
 }
 ```
-  
-First Example:
 
-```javascript
-var diet = "vegetarian";
+Example:
 
-switch (diet) {
-  case "vegetarian":
-    console.log("Where do you get your protein? :P ");
-  case "gluten free":
-    console.log("Wow, that eliminates all the best foods! :( ");
-  default:
-    console.log("Sounds like you're an omnivore.");
-}
-
-// Output:
-// Where do you get your protein? :P 
-// Wow, that eliminates all the best foods! :( 
-// Sounds like you're an omnivore.
-
-// Why????
-// Because no breaking statement is found it executes all of the cases after the true case (which is case 1)
-```
-
-Second Example:
-
-```javascript
-var diet = "vegetarian";
-
-switch (diet) {
-  case "vegetarian":
-    console.log("Where do you get your protein? :P ");
-  case "gluten free":
-    console.log("Wow, that eliminates all the best foods! :( ");
+```js
+var mood = "hungry"
+switch(mood){
+  case "happy":
+    console.log("Dance to Pharrel's Happy");
     break;
-  default:
-    console.log("Sounds like you're an omnivore.");
+  case "sad":
+    console.log("You should eat a pint of icecream");
+    break;
+  case "anxious":
+    console.log("Take some deep breaths");
+    break;
+  case "hungry":
+    console.log("You should eat a big chocolate cake");
+    break;
+  default: 
+    console.log("That's not a mood we support");
 }
-
-// Output:
-// Where do you get your protein? :P 
-// Wow, that eliminates all the best foods! :( 
-
-// Why????
-// Because break statement is found at the second case so execution stops there
 ```
+
+In the example above, we'll see `"You should eat a big chocolate cake"` printed to the console. If we change the value of the `mood` variable to `sad` you'll see `"You should eat a pint of icecream"`. If the value of `mood` changed to `"grumpy"`, the default statement would trigger and print out `"That's not a mood we support"`.
+  
++ Define a function `switchAge` that accepts an age as a parameter. The case statement should switch on `age` and return `"You are a teenager"` if the age is 13, 14, 15, 16, 17, 18, or 19, and return `"You have an age"` as the default.
+
 
 ## Resources
 
