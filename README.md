@@ -60,7 +60,7 @@ if (conditionToTestIsTrue){
 }
 ```
 
-+ Define a function `ageChecker` that takes in an age as a parameter. If the age is between 13-19 it should return `"You are a teenager"`. If the age is 12 or below, it should return `"You are a kid"`. If the age is above 19, it should return `"You are a grownup"`
++ Define a function `ageChecker` that takes in an age as a parameter. If the age is between 13-19 it should return `"You are a teenager!"`. If the age is 12 or below, it should return `"You are a kid"`. If the age is above 19, it should return `"You are a grownup"`
 
 ## Ternary Operator
 
@@ -140,3 +140,5 @@ In the example above, we'll see `"You should eat a big chocolate cake"` printed 
 * [Codecademy - Switch Statements](http://www.codecademy.com/glossary/javascript/switch-statements)
 
 <a href='https://learn.co/lessons/intro-to-flow-control.js' data-visibility='hidden'>View this lesson on Learn.co</a>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/intro-to-flow-control.js'>Intro To Flow Control in JS</a> on Learn.co and start learning to code for free.</p>
