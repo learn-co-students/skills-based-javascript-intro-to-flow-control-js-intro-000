@@ -10,7 +10,7 @@
 
 Flow Control allows the execution of code only under certain conditions. In Ruby, we used if statements, if/else statements, if/elsif/else statements, ternary operators, and case statements to control what code runs when. JavaScript has similar methods to control what blocks of code to execute: if statements, if/else statements, if/else if/else statements, ternary operators, and switch statements.
 
-You'll be writing your code in `js/flow-control.js`. Make sure to run the tests using `learn -b`.
+You'll be writing your code in `flow-control.js`. Make sure to run the tests using `learn -b`.
 
 ## If Statements
 
