@@ -1,81 +1,81 @@
 # JavaScript Flow Control
 
 ## Objectives
-+ Write if-statements in JS
-+ Write if-elsif-else statements in JS
++ Write `if` statements in JS
++ Write `if`-`else if`-`else` statements in JS
 + Use the ternary operator in JS
-+ Write switch statements in JS
++ Write `switch` statements in JS
 
 ## About
 
-Flow Control allows the execution of code only under certain conditions. In Ruby, we used if statements, if/else statements, if/elsif/else statements, ternary operators, and case statements to control what code runs when. JavaScript has similar methods to control what blocks of code to execute: if statements, if/else statements, if/else if/else statements, ternary operators, and switch statements.
+Flow Control allows the execution of code only under certain conditions.
 
-You'll be writing your code in `flow-control.js`. Make sure to run the tests using `learn -b`.
+JavaScript has similar methods to control what blocks of code to execute: `if` statements, `if`-`else` statements, `if`-`else if`-`else` statements, ternary operators, and `switch` statements.
 
-## If Statements
+You'll be writing your code in `flow-control.js`. Make sure to run the tests using `learn`.
 
-An if statement evaluates the code wrapped in parenthesis to either true or false. If `true`, the code block is executed. If false, nothing is executed.
+## `if` Statements
 
-JS Syntax:
+`if` statements look like this:
 
-```javascript
-if (conditionToTestIsTrue) {
-  // code to be executed here
+``` javascript
+if (something) {
+  // do something
 }
 ```
 
-Now, in `flow-control.js` let's write a function `basicTeenager` that accepts an age as a parameter. The function should contain an if-statement that checks to see if the age is a teenager. If the age is a teenager, it should return `"You are a teenager!"`
+They work as the name implies: _if_ `something` is _truthy_ (so the boolean `true` or anything other than the empty string (`''`), `0`, `null`, or `undefined`), the code in between the curly braces runs; if not, the code between the curly braces is skipped.
 
-## If/Else Statements
+Now, in `flow-control.js` let's write a function called `basicTeenager` that accepts an age as a parameter. The function should contain an if-statement that checks to see if the age is a teenager. If the age is between 13 and 19, return `"You are a teenager!"`
 
-You will often see an `If` statement used in combination with an  `else` clause. An `else` clause is a fallback to an `if` statement and will only get executed if the previous `if` statement is false.
-    
+## `if`-`else` Statements
+
+You will often see an `if` statement used in combination with an  `else` clause. An `else` clause will only get executed if the previous `if` statement is falsey.
+
 Syntax:
 
 ```javascript
-if (conditionToTestIsTrue) {
-  // condition is false hence code is not executed
+if (conditionToTest) {
+  // executed if `conditionToTest` is truthy
 } else {
-  // code to be executed because previous condition is false
+  // executed if `conditionToTest` is falsey
 }
 ```
 
-+ Define a function `teenager` that accepts an age as a parameter. If the age is between 13-19 it should return `"You are a teenager!"`. Otherwise, the function should return `"You are not a teenager"`.
++ Define a function `teenager` that accepts an age as a parameter. If the age is between 13 and 19 it should return `"You are a teenager!"`. Otherwise, the function should return `"You are not a teenager"`.
 
-## If/Else If Statements
+## `if`/`else if` Statements
 
-`if` statements can also be combined with an `else if` clause. This is like an else statement, but with its own condition. It will only run if its condition is true, and the previous statement's condition was false. 
-
-Note: An important thing to keep in mind when transitioning to JavaScript from Ruby is that the `elsif` becomes two full words: `else if`.
-
-Syntax:
+`if` statements can also be combined with an `else if` clause. This is like an `else` statement, but with its own condition. It will only run if its condition is true, and the previous statement's condition was false.
 
 ```javascript
-if (conditionToTestIsTrue){
+if (conditionToTest1`){
     // condition is false hence code is not executed
-} else if (thisConditionIsTrue) {
-  // execute this code if previous statement is false
-} else {
-  // execute this code if the 2 conditions above are false
+} else if (conditionToTest2) {
+  // execute this code if `conditionToTest1`statement is falsey AND `conditionToTest2` is truthy
 }
 ```
+
+You can optionally add a final `else` statement after all of your `else if` statements. You can probably guess what will happen: if _all of the other statements_ are falsey, this final `else` block will execute; otherwise, an earlier statement executes and the `else` block is skipped.
+
+``` javascript
+if (conditionToTest1`){
+    // condition is false hence code is not executed
+} else if (conditionToTest2) {
+  // execute this code if `conditionToTest1`statement is falsey AND `conditionToTest2` is truthy
+} else {
+  // execute this code iff none of the other conditions are met
+}
+```
+
 
 + Define a function `ageChecker` that takes in an age as a parameter. If the age is between 13-19 it should return `"You are a teenager!"`. If the age is 12 or below, it should return `"You are a kid"`. If the age is above 19, it should return `"You are a grownup"`
 
 ## Ternary Operator
 
-The ternary operator is used as a shortcut for the `if-else` statement. You've probably seen it before in Ruby looking something like this:
+Remember the ternary operator? You can think of it as a shortcut for the `if-else` statement.
 
-```ruby
-cart = ["graphic t-shirt", "aluminum water bottle"]
-
-puts cart.empty? ? "Please add something to your cart." : "You're ready to check out." 
-
-# Above prints:
-# You're ready to check out.
-```
-
-This operator tests a condition; if the condition is true, it returns a certain value, otherwise it returns a different value:
+This operator tests a condition; if the condition is truthy, it evaluates the left-hand side of the colon; otherwise it evaluates the right-hand side of the colon.
 
 Syntax:
 
@@ -107,7 +107,7 @@ switch (expression) {
 
 Example:
 
-```js
+```javascript
 var mood = "hungry"
 switch(mood){
   case "happy":
@@ -122,13 +122,13 @@ switch(mood){
   case "hungry":
     console.log("You should eat a big chocolate cake");
     break;
-  default: 
+  default:
     console.log("That's not a mood we support");
 }
 ```
 
 In the example above, we'll see `"You should eat a big chocolate cake"` printed to the console. If we change the value of the `mood` variable to `sad` you'll see `"You should eat a pint of icecream"`. If the value of `mood` changed to `"grumpy"`, the default statement would trigger and print out `"That's not a mood we support"`.
-  
+
 + Define a function `switchAge` that accepts an age as a parameter. The case statement should switch on `age` and return `"You are a teenager"` if the age is 13, 14, 15, 16, 17, 18, or 19, and return `"You have an age"` as the default.
 
 
@@ -138,7 +138,5 @@ In the example above, we'll see `"You should eat a big chocolate cake"` printed 
 * [MDN - if..else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
 * [Codecademy - Ternary Operator](http://www.codecademy.com/glossary/javascript/ternary-operator)
 * [Codecademy - Switch Statements](http://www.codecademy.com/glossary/javascript/switch-statements)
-
-<a href='https://learn.co/lessons/intro-to-flow-control.js' data-visibility='hidden'>View this lesson on Learn.co</a>
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/intro-to-flow-control.js'>Intro To Flow Control in JS</a> on Learn.co and start learning to code for free.</p>
