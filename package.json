@@ -1,0 +1,35 @@
+{
+  "name": "javascript-intro-to-flow-control",
+  "version": "0.1.0",
+  "description": "Introduction to flow control in JavaScript on Learn.co",
+  "main": "flow-control.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha -R mocha-multi --reporter-options nyan=-,json=.results.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/learn-co-curriculum/skills-based-javascript-intro-to-flow-control.git"
+  },
+  "keywords": [
+    "flow",
+    "javascript",
+    "learn",
+    "flatiron"
+  ],
+  "author": "pletcher",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/learn-co-curriculum/skills-based-javascript-intro-to-flow-control/issues"
+  },
+  "homepage": "https://github.com/learn-co-curriculum/skills-based-javascript-intro-to-flow-control#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "jsdom": "^8.5.0",
+    "mocha": "^2.4.5",
+    "mocha-jsdom": "^1.1.0",
+    "mocha-multi": "^0.9.0"
+  }
+}
