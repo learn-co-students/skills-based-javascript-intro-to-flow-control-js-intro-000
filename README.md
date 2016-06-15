@@ -8,13 +8,125 @@
 
 ## About
 
-Flow Control allows the execution of code only under certain conditions.
+Sometimes, we only want to allow the execution of code only under certain conditions.
 
-JavaScript has similar methods to control what blocks of code to execute: `if` statements, `if`-`else` statements, `if`-`else if`-`else` statements, ternary operators, and `switch` statements.
+Think of it this way. When you're driving a car, you can only go through a light **if** the light is green. **Otherwise**, if the light is yellow, you prepare to slow down; and if the light is red, you stop. Notice that we have distinct cases that we want to check for.
+
+In programming, when we check for a statement in this way, we check to see whether the statement is `true` or `false`. JavaScript, being the friendly language that it is, uses `true` and `false` directly to mean exactly what they say.
+
+## Comparisons
+
+The example above might be written, in pseudo-JavaScript (for once, this won't work in the browser console), like this:
+
+``` javascript
+if (lightIsGreen) {
+  go()
+} else if (lightIsRed) {
+  stop()
+} else if (lightIsYellow) {
+  slowDown()
+}
+```
+
+When we get down to it, every `if` statement like the above is saying, "If the thing in the parentheses is `true`, then do what's between the curly braces."
+
+But before we dive in to `if` statements, how do the things in parentheses _become_ `true` or `false`?
+
+JavaScript lets us compare things. Most of these comparisons come straight from math: we can ask if something is less than something else (enter these in your console!):
+
+``` javascript
+3 < 5 // true
+3 < 2 // false
+3 < 3 // false
+3 < 10000000 // true
+'alpha' < 'beta' // true (!)
+```
+
+We can ask if something is greater than something else:
+
+``` javascript
+5 > -1 // true
+5 > 5 // false
+20 > 30 // false
+'gamma' > 'beta' // true (!)
+```
+
+We can even ask if something is less-than-or-equal-to something else:
+
+``` javascript
+20 <= 30 // true
+20 <= 20 // true
+20 <= 10 // false
+```
+
+or greater-than-or-equal-to something:
+
+``` javascript
+5 >= 5 // true
+5 >= 1 // true
+5 >= 10 // false
+```
+
+How do we test if something is _exactly_ equal to something else? We know that we can't just use `=`, because that's how we assign values to variables. Instead, we need to use `===`:
+
+``` javascript
+5 === 5 // true
+4 === 5 // false
+'5' === 5 // false
+parseInt('5', 10) === 5 // true
+```
+
+**Top Tip**: Sometimes you'll see only `==` for comparison in JavaScript. It's best to use `===`, as the former will try to _coerce_ values in order to compare them, meaning that it's not always comparing what it _says_ it's comparing!
+
+## Combining Comparisons
+
+We can string together these comparisons using `&&` (pronounced "and") and `||` ("or"):
+
+``` javascript
+5 === 5 && 10 < 11 // true
+5 === 6 && 10 < 11 // false
+5 === 5 && 10 < 9 // false
+
+4 > 5 || 20 <= 20 // true
+4 > 5 || 20 < 19 // false
+4 > 3 || 20 < 19 // true
+```
+
+With `&&`, _both_ statements (to the left and right of `&&`) must be `true` in order for the entire _expression_ (that is, the entire _phrase_) to be `true`; with `||`, only one of the statements needs to be `true`.
+
+Keep in mind that JavaScript reads this combinations from left to right, returns the last statement it saw, and only evaluates as many statements as necessary. So if we write,
+
+``` javascript
+5 === 5 && 1
+```
+
+JavaScript won't return `true`, it will return `0`. If instead we write,
+
+``` javascript
+5 === 4 && 0
+```
+
+JavaScript will return `false`, because it stops evaluating the `&&` expression (again, this just means the entire phrase of comparisons) on its first false encounter. Similarly, if we write,
+
+``` javascript
+200 < 100 || 'alphabet'
+```
+
+JavaScript will return 'alphabet', because it needs to evaluate the right-hand side of `||` (since `200 < 100` is `false`). But if we write,
+
+``` javascript
+200 > 100 || 'treasure'
+```
+
+JavaScript simply returns `true` — it doesn't even check the right-hand side of `||`.
+
+## Controlling the flow of our programs
+
+JavaScript lets us control what blocks of code to execute using `if` statements, `if`-`else` statements, `if`-`else if`-`else` statements, ternary operators, and `switch` statements.
 
 You'll be writing your code in `flow-control.js`. Make sure to run the tests using `learn`.
 
-## `if` Statements
+### `if` Statements
 
 `if` statements look like this:
 
@@ -28,7 +140,7 @@ They work as the name implies: _if_ `something` is _truthy_ (so the boolean `tru
 
 Now, in `flow-control.js` let's write a function called `basicTeenager` that accepts an age as a parameter. The function should contain an if-statement that checks to see if the age is a teenager. If the age is between 13 and 19, return `"You are a teenager!"`
 
-## `if`-`else` Statements
+### `if`-`else` Statements
 
 You will often see an `if` statement used in combination with an  `else` clause. An `else` clause will only get executed if the previous `if` statement is falsey.
 
@@ -44,7 +156,7 @@ if (conditionToTest) {
 
 + Define a function `teenager` that accepts an age as a parameter. If the age is between 13 and 19 it should return `"You are a teenager!"`. Otherwise, the function should return `"You are not a teenager"`.
 
-## `if`/`else if` Statements
+### `if`/`else if` Statements
 
 `if` statements can also be combined with an `else if` clause. This is like an `else` statement, but with its own condition. It will only run if its condition is true, and the previous statement's condition was false.
 
@@ -59,19 +171,18 @@ if (conditionToTest1`){
 You can optionally add a final `else` statement after all of your `else if` statements. You can probably guess what will happen: if _all of the other statements_ are falsey, this final `else` block will execute; otherwise, an earlier statement executes and the `else` block is skipped.
 
 ``` javascript
-if (conditionToTest1`){
-    // condition is false hence code is not executed
+if (conditionToTest1) {
+  // condition is false hence code is not executed
 } else if (conditionToTest2) {
-  // execute this code if `conditionToTest1`statement is falsey AND `conditionToTest2` is truthy
+  // execute this code if `conditionToTest1` statement is falsey AND `conditionToTest2` is truthy
 } else {
   // execute this code iff none of the other conditions are met
 }
 ```
 
-
 + Define a function `ageChecker` that takes in an age as a parameter. If the age is between 13-19 it should return `"You are a teenager!"`. If the age is 12 or below, it should return `"You are a kid"`. If the age is above 19, it should return `"You are a grownup"`
 
-## Ternary Operator
+### Ternary Operator
 
 Remember the ternary operator? You can think of it as a shortcut for the `if-else` statement.
 
