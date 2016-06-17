@@ -161,7 +161,7 @@ if (conditionToTest) {
 `if` statements can also be combined with an `else if` clause. This is like an `else` statement, but with its own condition. It will only run if its condition is true, and the previous statement's condition was false.
 
 ```javascript
-if (conditionToTest1`){
+if (conditionToTest1) {
     // condition is false hence code is not executed
 } else if (conditionToTest2) {
   // execute this code if `conditionToTest1`statement is falsey AND `conditionToTest2` is truthy
