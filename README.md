@@ -100,7 +100,7 @@ Keep in mind that JavaScript reads this combinations from left to right, returns
 5 === 5 && 1
 ```
 
-JavaScript won't return `true`, it will return `0`. If instead we write,
+JavaScript won't return `true`, it will return `1`. If instead we write,
 
 ``` javascript
 5 === 4 && 0
@@ -251,3 +251,5 @@ In the example above, we'll see `"You should eat a big chocolate cake"` printed 
 * [Codecademy - Switch Statements](http://www.codecademy.com/glossary/javascript/switch-statements)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/intro-to-flow-control.js'>Intro To Flow Control in JS</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/skills-based-javascript-intro-to-flow-control'>JavaScript Flow Control</a> on Learn.co and start learning to code for free.</p>
