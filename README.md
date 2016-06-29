@@ -184,7 +184,7 @@ if (conditionToTest1) {
 
 ### Ternary Operator
 
-Remember the ternary operator? You can think of it as a shortcut for the `if-else` statement.
+You can think of it as a shortcut for the `if-else` statement.
 
 This operator tests a condition; if the condition is truthy, it evaluates the left-hand side of the colon; otherwise it evaluates the right-hand side of the colon.
 
@@ -251,3 +251,5 @@ In the example above, we'll see `"You should eat a big chocolate cake"` printed 
 * [Codecademy - Switch Statements](http://www.codecademy.com/glossary/javascript/switch-statements)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/intro-to-flow-control.js'>Intro To Flow Control in JS</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/skills-based-javascript-intro-to-flow-control'>JavaScript Flow Control</a> on Learn.co and start learning to code for free.</p>
