@@ -184,7 +184,7 @@ if (conditionToTest1) {
 
 ### Ternary Operator
 
-Remember the ternary operator? You can think of it as a shortcut for the `if-else` statement.
+You can think of it as a shortcut for the `if-else` statement.
 
 This operator tests a condition; if the condition is truthy, it evaluates the left-hand side of the colon; otherwise it evaluates the right-hand side of the colon.
 
