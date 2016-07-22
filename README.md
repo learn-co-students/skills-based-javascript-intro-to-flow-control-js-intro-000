@@ -182,6 +182,55 @@ if (conditionToTest1) {
 
 + Define a function `ageChecker` that takes in an age as a parameter. If the age is between 13-19 it should return `"You are a teenager!"`. If the age is 12 or below, it should return `"You are a kid"`. If the age is above 19, it should return `"You are a grownup"`
 
+**Top tip**: Remember, if you place a `return` statement before the end of the function, anything after `return` **won't get executed**. We can use this to make code terser:
+
+```javascript
+function canGo(lightColor) {
+  if (lightColor === 'green') {
+    return true
+  }
+
+  return false
+}
+```
+
+The above function will return `true` if `lightColor` is `'green'` — go ahead
+and try it out.
+
+```javascript
+canGo('green') // true
+```
+
+And `false` otherwise:
+
+```javascript
+canGo('red') // false
+```
+
+Notice that we didn't have to use an `else` statement; we can just depend on
+`return`.
+
+We need to be careful with `return`, however, because it's easy to return too
+early and not execute important parts of the function. For example,
+
+```javascript
+function canGo(lightColor) {
+  return true
+
+  if (lightColor === 'red') {
+    return false
+  }
+}
+```
+
+will _always_ return `true`, even if `lightColor` is `'red'`. Try it!
+
+```javascript
+canGo('red') // true
+```
+
+And that's a great way to cause an accident.
+
 ### Ternary Operator
 
 You can think of it as a shortcut for the `if-else` statement.
@@ -195,7 +244,6 @@ conditionToTest ? valueToBeReturnedIfTrue : valueToBeReturnedIfFalse
 ```
 
 + Define a function `ternaryTeenager` that accepts age as a parameter. The body of the function should use the ternary operator to return `"You are a teenager"` if age is between 13-19 and returns `"You are not a teenager"` if the age is anything else.
-
 
 ## Switch Statements
 
@@ -220,7 +268,7 @@ Example:
 
 ```javascript
 var mood = "hungry"
-switch(mood){
+switch(mood) {
   case "happy":
     console.log("Dance to Pharrel's Happy");
     break;
@@ -242,6 +290,26 @@ In the example above, we'll see `"You should eat a big chocolate cake"` printed 
 
 + Define a function `switchAge` that accepts an age as a parameter. The case statement should switch on `age` and return `"You are a teenager"` if the age is 13, 14, 15, 16, 17, 18, or 19, and return `"You have an age"` as the default.
 
+As with any function, `return` will halt execution at any point. Thus if we
+wrote,
+
+```javascript
+function feelings(mood) {
+  switch(mood) {
+    case "happy":
+      return "Dance to PHarrel's 'Happy'"
+    default:
+      return "I don't recognize that mood."
+  }
+
+  console.log("Let us know how you're feeling tomorrow!")
+}
+```
+
+the `console.log()` statement at the bottom of the function will
+_never run_. This is a major difference between `return` and `break`:
+`return` _exits_ the function and _returns_ a value; `break` exits a
+_block_ and does not (generally speaking) have a value associated with it.
 
 ## Resources
 

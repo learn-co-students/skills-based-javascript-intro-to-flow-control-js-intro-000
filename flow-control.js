@@ -1,21 +1,19 @@
-'use strict';
-
-function basicTeenager(age){
+function basicTeenager(age) {
 
 }
 
-function teenager(age){
+function teenager(age) {
 
 }
 
-function ageChecker(age){
+function ageChecker(age) {
 
 }
 
-function ternaryTeenager(age){
+function ternaryTeenager(age) {
 
 }
 
-function switchAge(age){
+function switchAge(age) {
 
 }
