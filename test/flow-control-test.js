@@ -5,6 +5,8 @@ const fs = require('fs')
 const jsdom = require('mocha-jsdom')
 const path = require('path')
 
+
+
 describe('flow-control', () => {
   jsdom({
     src: fs.readFileSync(path.resolve(__dirname, '..', 'flow-control.js'), 'utf-8')
