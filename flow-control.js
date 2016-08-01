@@ -1,21 +1,20 @@
 'use strict';
 
-function basicTeenager(age){
+if basicTeenager('13 - 19'){ return "Basic Teenager"
 
 }
 
-function teenager(age){
+if teenager("13 - 19"){return "you are a teenager"
+} else {return "you are not a teenager" }
 
 }
 
-function ageChecker(age){
+if ageChecker('13 - 19'){return "you are a teenager"}
+else if ("<12") {return "you are a kid"}
+else (">19") {return "you are a grownup"}
 
 }
 
-function ternaryTeenager(age){
+if ternaryTeenager("13 - 19"){return "you are a teenager"}: {return "you are not a teenager"}
 
-}
-
-function switchAge(age){
-
-}
+} 
