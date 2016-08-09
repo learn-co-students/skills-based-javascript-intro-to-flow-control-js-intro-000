@@ -5,7 +5,7 @@ function basicTeenager(age){
     return("You are a teenager!");
   }
   else if (age){
-    return("You are not a teenager.");
+    return("You are not a teenager");
   }
 }
 
@@ -32,6 +32,7 @@ function ageChecker(age){
 }
 
 function ternaryTeenager(age){
+  (age? "You are a teenager" : "You are not a teenager")
 
 }
 
