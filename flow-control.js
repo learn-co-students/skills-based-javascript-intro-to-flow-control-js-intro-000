@@ -5,9 +5,9 @@ function basicTeenager(age) {
     console.log("You are a teenager!")
   }
   else if (ape <= 19) {
-    console.log("You are a teenager")
+    console.log("You are a teenager!")
   }
-  else (age = false) {
+  else (age) {
     console.log("You are not a teenager.")
   }
 
