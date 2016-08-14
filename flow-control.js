@@ -8,7 +8,7 @@ function basicTeenager(age){
 
 function teenager(age){
   if (age >= 14 && age <= 19) {
-    control.log "You are a teenager!"
+    console.log "You are a teenager!"
   } else {
     return `you are not a teenager`
   }
