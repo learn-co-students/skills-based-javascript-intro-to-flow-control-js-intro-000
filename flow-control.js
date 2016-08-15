@@ -33,5 +33,4 @@ function switchAge(age){
   return `You are a teenager`
 } else {
   return `You have an age`}
-
-}
+} // that was easy)
