@@ -17,6 +17,7 @@ describe('flow-control', () => {
 
     it('should return undefined if the age is not between 13-19', () => {
       expect(basicTeenager(12)).to.be.undefined
+      expect(basicTeenager(20)).to.be.undefined
     })
 
   })
@@ -27,7 +28,7 @@ describe('flow-control', () => {
     })
     it('should return "you are not a teenager" if the age is not between 13-19', () => {
       expect(teenager(12)).to.equal("You are not a teenager")
-      expect(teenager(29)).to.equal("You are not a teenager")
+      expect(teenager(20)).to.equal("You are not a teenager")
     })
 
   })
@@ -51,7 +52,8 @@ describe('flow-control', () => {
     })
 
     it('should return "You are not a teenager" if age not between 13-19', () => {
-      expect(ternaryTeenager(75)).to.equal("You are not a teenager")
+      expect(ternaryTeenager(12)).to.equal("You are not a teenager")
+      expect(ternaryTeenager(20)).to.equal("You are not a teenager")
     })
 
   })
