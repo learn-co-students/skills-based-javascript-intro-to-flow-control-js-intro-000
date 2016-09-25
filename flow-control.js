@@ -1,19 +1,21 @@
-function basicTeenager(age) {
+function basicTeenager(13,14,15,16,17,18,19) {"You are a teenager"
 
 }
 
-function teenager(age) {
+
+
+function teenager(13,14,15,16,17,18,19) {"You are a teenager"
 
 }
 
-function ageChecker(age) {
+function ageChecker(13,14,15,16,17,18,19) {"You are a teenager"
 
 }
 
-function ternaryTeenager(age) {
+function ternaryTeenager(13,14,15,16,17,18,19) {"You are a teenager"
 
 }
 
-function switchAge(age) {
+function switchAge(13,14,15,16,17,18,19) {"You are a teenager"
 
 }
