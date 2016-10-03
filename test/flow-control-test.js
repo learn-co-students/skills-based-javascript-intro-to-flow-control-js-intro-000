@@ -7,7 +7,6 @@ describe('flow-control', () => {
 
   before(done => {
     const src = path.resolve(__dirname, '..', 'flow-control.js')
-
     jsdom.env('<div></div>', [src], (err, window) => {
       if (err) {
         return done(err)
@@ -16,7 +15,6 @@ describe('flow-control', () => {
       Object.keys(window).forEach(key => {
         global[key] = window[key]
       })
-
       return done()
     })
   })
