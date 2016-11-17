@@ -245,6 +245,12 @@ conditionToTest ? valueToBeReturnedIfTrue : valueToBeReturnedIfFalse
 
 + Define a function `ternaryTeenager` that accepts age as a parameter. The body of the function should use the ternary operator to return `"You are a teenager"` if age is between 13-19 and returns `"You are not a teenager"` if the age is anything else.
 
+**Top tip**: In order for the function to actually **return** the evaluation of the ternary operator, you'll need to prepend `return` to the expression:
+
+```javascript
+return conditionToTest ? valueToBeReturnedIfTrue : valueToBeReturnedIfFalse
+```
+
 ## Switch Statements
 
 Switch statements acts like a big if/else if/else chain. The switch expression is evaluated once and the value of the expression is compared with the values of each case. If there is a match, the associated block of code is executed.
