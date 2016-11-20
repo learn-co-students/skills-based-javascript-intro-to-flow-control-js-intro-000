@@ -276,10 +276,10 @@ Example:
 var mood = "hungry"
 switch(mood) {
   case "happy":
-    console.log("Dance to Pharrel's Happy");
+    console.log("Dance to Pharrell's 'Happy'");
     break;
   case "sad":
-    console.log("You should eat a pint of icecream");
+    console.log("You should eat a pint of ice cream");
     break;
   case "anxious":
     console.log("Take some deep breaths");
