@@ -1,8 +1,13 @@
+var age = 0;
 function basicTeenager(age) {
-  if var inputNum = $('age') {}
-inputNum >=13 && inputNum <=19;
-    }
-    return `"You are a teenager!"
+ var inputNum = $('age');
+
+    if (age === inputNum) {
+          inputNum >=13 && inputNum <=19;
+} else {
+  // executed if `conditionToTest` is falsey
+}
+return `"You are a teenager!"
 }
 
 function teenager(age) {
