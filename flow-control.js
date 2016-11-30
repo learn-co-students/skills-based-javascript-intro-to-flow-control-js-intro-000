@@ -1,27 +1,59 @@
-var age = 0;
-function basicTeenager(age) {
- var inputNum = $('age');
 
-    if (age === inputNum) {
-          inputNum >=13 && inputNum <=19;
-} else {
-  // executed if `conditionToTest` is falsey
-}
-return `"You are a teenager!"
-}
 
-function teenager(age) {
+function basicTeenager(age) { var age;
+    if (age >=13 && age <=19) { console.log(`You are a teenager!`); }
 
-}
-
-function ageChecker(age) {
-
+  } else {
+    return undefined
+  } // only an if statement basicTeenager('18')
+basicTeenager('14')
+basicTeenager('21')
+function teenager(age) { var age = '0'
+  if ((age >= 13 && age <= 19)) { console.log(`"You are a teenager!"`);
+         } else {
+           console.log(`"You are a not teenager"`);
+         }}
 }
 
-function ternaryTeenager(age) {
-
+teenager('18'); teenager('11');
+function ageChecker(age) { var age = '0'
+  if ((age >= 13 && age <= 19)) { console.log(`"You are a teenager!"`);
+           } else if (age <=12){ console.log(`You are a kid`);
+           } else (age >=20){ return `You are a grownup`
+           }}
+  ageChecker('18'); ageChecker('12'); ageChecker('22');
 }
+
+function ternaryTeenager(age) { var age = '0'
+  return ((age >= 13 && age <= 19)) ?  console.log(`"You are a teenager!"`) :  console.log(`"You are not a teenager!"`)
+}
+ternaryTeenager('18')
 
 function switchAge(age) {
-
+    var age = '0'
+    var myswitch = age
+    case "13":
+      console.log(`"You are a teenager!"`)
+      break;
+    case "14":
+      console.log(`"You are a teenager!"`)
+      break;
+    case "15":
+      console.log(`"You are a teenager!"`)
+      break;
+    case "16":
+      console.log(`"You are a teenager!"`)
+      break;
+    case "17":
+      console.log(`"You are a teenager!"`)
+      break;
+    case "18":
+      console.log(`"You are a teenager!"`)
+      break;
+    case "19":
+      console.log(`"You are a teenager!"`)
+      break;
+    default:  console.log(`"You are not a teenager!"`)
+  }
 }
+switchAge('19'); switchAge('22');
