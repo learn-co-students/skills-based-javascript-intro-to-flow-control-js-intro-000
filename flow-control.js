@@ -33,6 +33,6 @@ function ternaryTeenager(age) {
   return "You are not a teenager!";
 }
 
-function switchAge(age) {
+/*function switchAge(age) {
 
-}
+}*/
