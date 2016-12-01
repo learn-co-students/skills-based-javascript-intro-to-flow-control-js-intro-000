@@ -15,6 +15,7 @@ function ternaryTeenager(age) {
 }
 ternaryTeenager('18'); ternaryTeenager('11');
 function switchAge(age) {
- switch(age) { case "13": return `"You are a teenager"`; case "14": return `You are a teenager`; case "15": return `You are a teenager`; case "16": return `You are a teenager`; case "17": return `You are a teenager`; case "18": return `You are a teenager`; case "19": return `You are a teenager`; default: return `You have an age`;}
+ switch(age) { case "13": return `You are a teenager`; case "14": return `You are a teenager`; case "15": return `You are a teenager`; case "16": return `You are a teenager`; case "17": return `You are a teenager`; case "18": return `You are a teenager`; case "19": return `You are a teenager`; default: return `You have an age`; break};
 }
-switchAge('13'); switchAge('22');
+switchAge('13'); switchAge('14');switchAge('15'); switchAge('16');switchAge('17'); switchAge('18');switchAge('19'); switchAge('20')
+//  switchAge('20') should return the default answer but this Learn system sees somthing else.
