@@ -8,7 +8,7 @@ function teenager(age) {
   if (age >= 13 && age <= 19){
     return "You are a teenager!"
   } else {
-    return "You are not a teenager"};
+    return "You are not a teenager"}
 }
 
 function ageChecker(age) {
@@ -27,14 +27,6 @@ function ternaryTeenager(age) {
   return (age > 13 && age < 20) ? "You are a teenager":"You are not a teenager"
 };
 
-function isTodayAHoliday(dayOfYear){
-  if (dayOfYear == 55){
-    return true;
-  } else {
-    return false;
-  }
-}
-
 function switchAge(age) {
   switch(age){
     case 13:
@@ -48,5 +40,5 @@ function switchAge(age) {
         break;
     default:
       return "You have an age"
-  };
+  }
 }
