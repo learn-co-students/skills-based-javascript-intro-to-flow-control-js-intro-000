@@ -80,7 +80,7 @@ parseInt('5', 10) === 5 // true
 
 ## Combining Comparisons
 
-We can string together these comparisons using `&&` (pronounced "and") and `||` ("or"):
+We can combine these comparisons together using `&&` (pronounced "and") and `||` ("or"):
 
 ``` javascript
 5 === 5 && 10 < 11 // true
