@@ -52,7 +52,7 @@ switch (age) {
   break;
   case 19:
   return "You are a teenager"; // if age is 19, return "You are a teenager" else...
-  break;
+  break; 
   default:
   return "You have an age" // if none of the above tests are true, return "You have an age"
 }
