@@ -176,7 +176,7 @@ if (conditionToTest1) {
 } else if (conditionToTest2) {
   // execute this code if `conditionToTest1` statement is falsey AND `conditionToTest2` is truthy
 } else {
-  // execute this code iff none of the other conditions are met
+  // execute this code if none of the other conditions are met
 }
 ```
 
