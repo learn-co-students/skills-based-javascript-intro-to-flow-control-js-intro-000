@@ -140,6 +140,12 @@ They work as the name implies: _if_ `something` is _truthy_ (so the boolean `tru
 
 Now, in `flow-control.js` let's write a function called `basicTeenager` that accepts an age as a parameter. The function should contain an if-statement that checks to see if the age is a teenager. If the age is between 13 and 19, return `"You are a teenager!"`
 
+basicTeenager = function(age) {
+  if (age < 19 && age > 13) {
+    return "You are a teenager!";
+  }
+}
+
 ### `if`-`else` Statements
 
 You will often see an `if` statement used in combination with an  `else` clause. An `else` clause will only get executed if the previous `if` statement is falsey.
@@ -157,6 +163,15 @@ if (conditionToTest) {
 + Define a function `teenager` that accepts an age as a parameter. If the age is between 13 and 19 it should return `"You are a teenager!"`. Otherwise, the function should return `"You are not a teenager"`.
 
 ### `if`/`else if` Statements
+
+var teenager = function(age) {
+  if ((age > 13) && (age < 19)) {
+    return "You are a teenager!"
+  }
+    else {
+      return "You are not a teenager"
+    }
+}
 
 `if` statements can also be combined with an `else if` clause. This is like an `else` statement, but with its own condition. It will only run if its condition is true, and the previous statement's condition was false.
 
@@ -181,6 +196,18 @@ if (conditionToTest1) {
 ```
 
 + Define a function `ageChecker` that takes in an age as a parameter. If the age is between 13-19 it should return `"You are a teenager!"`. If the age is 12 or below, it should return `"You are a kid"`. If the age is above 19, it should return `"You are a grownup"`
+
+var ageChecker = function(age) {
+  if (age > 13) && (age < 19) {
+    return ("You are a teenager!");  
+  }
+  elseif (age =< 12) {
+    return ("You are a kid");
+  }
+  else {
+    return "You are a grownup"
+  }
+}
 
 **Top tip**: Remember, if you place a `return` statement before the end of the function, anything after `return` **won't get executed**. We can use this to make code terser:
 
@@ -251,6 +278,10 @@ conditionToTest ? valueToBeReturnedIfTrue : valueToBeReturnedIfFalse
 return conditionToTest ? valueToBeReturnedIfTrue : valueToBeReturnedIfFalse
 ```
 
+ternaryTeenager = function(age) {
+  return ((age > 13) && (age < 19)) ? "You are a teenager" : "You are not a teenager";
+}
+
 ## Switch Statements
 
 Switch statements acts like a big if/else if/else chain. The switch expression is evaluated once and the value of the expression is compared with the values of each case. If there is a match, the associated block of code is executed.
@@ -295,6 +326,16 @@ switch(mood) {
 In the example above, we'll see `"You should eat a big chocolate cake"` printed to the console. If we change the value of the `mood` variable to `sad` you'll see `"You should eat a pint of ice cream"`. If the value of `mood` changed to `"grumpy"`, the default statement would trigger and print out `"That's not a mood we support"`.
 
 + Define a function `switchAge` that accepts an age as a parameter. The case statement should switch on `age` and return `"You are a teenager"` if the age is 13, 14, 15, 16, 17, 18, or 19, and return `"You have an age"` as the default.
+
+switchAge = function(age) {
+  switch(age) {
+    case (age >= 13 && age < 19):  
+      return "You are a teenager!";
+    break;
+    default:
+      return "You have an age";
+  }
+}
 
 As with any function, `return` will halt execution at any point. Thus if we
 wrote,
