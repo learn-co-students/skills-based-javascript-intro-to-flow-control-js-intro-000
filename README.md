@@ -261,10 +261,10 @@ Syntax:
 switch (expression) {
   case n:
       // code to be executed if case n is true
-      break; // break out of switch statement once code executed
+        // break out of switch statement once code executed
   case m:
       // code to be executed if case m is true
-      break; // break out of switch statement once code executed
+        // break out of switch statement once code executed
   default:  // all other cases
       // code to be executed if case n and case m false
 }
@@ -276,19 +276,19 @@ Example:
 var mood = "hungry"
 switch(mood) {
   case "happy":
-    console.log("Dance to Pharrell's 'Happy'");
-    break;
+     return("Dance to Pharrell's 'Happy'");
+
   case "sad":
-    console.log("You should eat a pint of ice cream");
-    break;
+     return("You should eat a pint of ice cream");
+
   case "anxious":
-    console.log("Take some deep breaths");
-    break;
+     return("Take some deep breaths");
+
   case "hungry":
-    console.log("You should eat a big chocolate cake");
-    break;
+     return("You should eat a big chocolate cake");
+
   default:
-    console.log("That's not a mood we support");
+     return("That's not a mood we support");
 }
 ```
 
@@ -308,11 +308,11 @@ function feelings(mood) {
       return "I don't recognize that mood."
   }
 
-  console.log("Let us know how you're feeling tomorrow!")
+   return("Let us know how you're feeling tomorrow!")
 }
 ```
 
-the `console.log()` statement at the bottom of the function will
+the ` return()` statement at the bottom of the function will
 _never run_. This is a major difference between `return` and `break`:
 `return` _exits_ the function and _returns_ a value; `break` exits a
 _block_ and does not (generally speaking) have a value associated with it.
