@@ -20,11 +20,8 @@ function ageChecker(age) { if (age >= 13 && age <= 19) { return "You are a teena
 
 else if  (age <= 12) { return "You are a kid" } 
 
-else {  
+else {  return "You are a grownup"
 
-{ return "You are a grownup"
-
-}
 }
 }
 
@@ -41,10 +38,38 @@ else { return  "You are not a teenager" }
 
 function switchAge(age) {
 
-if (age >= 13 && age <= 19) { 
+switch (age) {  
 
-return "You are a teenager" } 
+case 13: 
 
-else { return  "You have an age" }
+return "You are a teenager"; 
+
+case 14: 
+
+return "You are a teenager"; 
+
+case 15: 
+
+return "You are a teenager"; 
+
+
+case 16: 
+
+return "You are a teenager"; 
+
+case 17: 
+
+return "You are a teenager"; 
+
+case 18: 
+
+return "You are a teenager"; 
+
+
+default: 
+
+return "You have an age"; 
+
+} 
 
 }
