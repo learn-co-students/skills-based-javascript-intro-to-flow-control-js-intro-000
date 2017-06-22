@@ -20,9 +20,34 @@ return ("you are a grownup")
 }
 
 function ternaryTeenager(age) {
-
+return conditionToTest ? valueToBeReturnedIfTrue : valueToBeReturnedIfFalse
+valueToBeReturnedIfTrue ("you are a teenager")
+valueToBeReturnedIfFalse ("you are not a teenager")
+if (age >= 13 && age <= 19)
 }
 
 function switchAge(age) {
-
+  case "13":
+  console.log("you are a teenager");
+  break;
+  case "14":
+  console.log("you are a teenager");
+  break;
+  case "15":
+  console.log("you are a teenager");
+  break;
+  case "16":
+  console.log("you are a teenager");
+  break;
+  case "17":
+  console.log("you are a teenager");
+  break;
+  case "18":
+  console.log("you are a teenager");
+  break;
+  case "19":
+  console.log("you are a teenager");
+  break;
+  default:
+  console.log("you have an age");
 }
