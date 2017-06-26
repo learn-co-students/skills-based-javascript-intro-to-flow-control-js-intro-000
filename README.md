@@ -184,6 +184,7 @@ if (conditionToTest1) {
 
 **Top tip**: Remember, if you place a `return` statement before the end of the function, anything after `return` **won't get executed**. We can use this to make code terser:
 
+
 ```javascript
 function canGo(lightColor) {
   if (lightColor === 'green') {
