@@ -8,7 +8,7 @@
 
 ## About
 
-Sometimes, we only want to allow the execution of code only under certain conditions.
+Sometimes, we only want to allow the execution of code under certain conditions.
 
 Think of it this way. When you're driving a car, you can only go through a light **if** the light is green. **Otherwise**, if the light is yellow, you prepare to slow down; and if the light is red, you stop. Notice that we have distinct cases that we want to check for.
 
@@ -80,7 +80,7 @@ parseInt('5', 10) === 5 // true
 
 ## Combining Comparisons
 
-We can string together these comparisons using `&&` (pronounced "and") and `||` ("or"):
+We can combine these comparisons together using `&&` (pronounced "and") and `||` ("or"):
 
 ``` javascript
 5 === 5 && 10 < 11 // true
@@ -136,7 +136,7 @@ if (something) {
 }
 ```
 
-They work as the name implies: _if_ `something` is _truthy_ (so the boolean `true` or anything other than the empty string (`''`), `0`, `null`, or `undefined`), the code in between the curly braces runs; if not, the code between the curly braces is skipped.
+They work as the name implies: _if_ `something` is _truthy_ (so the boolean `true` or anything other than the empty string (`''`), `0`, `false`, `null`, or `undefined`), the code in between the curly braces runs; if not, the code between the curly braces is skipped.
 
 Now, in `flow-control.js` let's write a function called `basicTeenager` that accepts an age as a parameter. The function should contain an if-statement that checks to see if the age is a teenager. If the age is between 13 and 19, return `"You are a teenager!"`
 
@@ -176,7 +176,7 @@ if (conditionToTest1) {
 } else if (conditionToTest2) {
   // execute this code if `conditionToTest1` statement is falsey AND `conditionToTest2` is truthy
 } else {
-  // execute this code iff none of the other conditions are met
+  // execute this code if none of the other conditions are met
 }
 ```
 
@@ -245,6 +245,12 @@ conditionToTest ? valueToBeReturnedIfTrue : valueToBeReturnedIfFalse
 
 + Define a function `ternaryTeenager` that accepts age as a parameter. The body of the function should use the ternary operator to return `"You are a teenager"` if age is between 13-19 and returns `"You are not a teenager"` if the age is anything else.
 
+**Top tip**: In order for the function to actually **return** the evaluation of the ternary operator, you'll need to prepend `return` to the expression:
+
+```javascript
+return conditionToTest ? valueToBeReturnedIfTrue : valueToBeReturnedIfFalse
+```
+
 ## Switch Statements
 
 Switch statements acts like a big if/else if/else chain. The switch expression is evaluated once and the value of the expression is compared with the values of each case. If there is a match, the associated block of code is executed.
@@ -270,10 +276,10 @@ Example:
 var mood = "hungry"
 switch(mood) {
   case "happy":
-    console.log("Dance to Pharrel's Happy");
+    console.log("Dance to Pharrell's 'Happy'");
     break;
   case "sad":
-    console.log("You should eat a pint of icecream");
+    console.log("You should eat a pint of ice cream");
     break;
   case "anxious":
     console.log("Take some deep breaths");
@@ -286,7 +292,7 @@ switch(mood) {
 }
 ```
 
-In the example above, we'll see `"You should eat a big chocolate cake"` printed to the console. If we change the value of the `mood` variable to `sad` you'll see `"You should eat a pint of icecream"`. If the value of `mood` changed to `"grumpy"`, the default statement would trigger and print out `"That's not a mood we support"`.
+In the example above, we'll see `"You should eat a big chocolate cake"` printed to the console. If we change the value of the `mood` variable to `sad` you'll see `"You should eat a pint of ice cream"`. If the value of `mood` changed to `"grumpy"`, the default statement would trigger and print out `"That's not a mood we support"`.
 
 + Define a function `switchAge` that accepts an age as a parameter. The case statement should switch on `age` and return `"You are a teenager"` if the age is 13, 14, 15, 16, 17, 18, or 19, and return `"You have an age"` as the default.
 
@@ -297,7 +303,7 @@ wrote,
 function feelings(mood) {
   switch(mood) {
     case "happy":
-      return "Dance to PHarrel's 'Happy'"
+      return "Dance to Pharrell's 'Happy'"
     default:
       return "I don't recognize that mood."
   }
