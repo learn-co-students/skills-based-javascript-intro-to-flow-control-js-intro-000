@@ -136,7 +136,7 @@ if (something) {
 }
 ```
 
-They work as the name implies: _if_ `something` is _truthy_ (so the boolean `true` or anything other than the empty string (`''`), `0`, `null`, or `undefined`), the code in between the curly braces runs; if not, the code between the curly braces is skipped.
+They work as the name implies: _if_ `something` is _truthy_ (so the boolean `true` or anything other than the empty string (`''`), `0`, `false`, `null`, or `undefined`), the code in between the curly braces runs; if not, the code between the curly braces is skipped.
 
 Now, in `flow-control.js` let's write a function called `basicTeenager` that accepts an age as a parameter. The function should contain an if-statement that checks to see if the age is a teenager. If the age is between 13 and 19, return `"You are a teenager!"`
 
