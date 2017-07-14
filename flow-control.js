@@ -3,7 +3,7 @@ function basicTeenager(age) {
     return "You are a teenager!";
   }
 
-}
+}// age=parameter, given an argument elsewhere
 
 function teenager(age) {
   if( age >= 13 && age <= 19){
@@ -41,8 +41,7 @@ function switchAge(age) {
     case (17) :
     case (18) :
     case (19) :
-      return "You are a teenager";
-      break;
+      return "You are a teenager";//only use break to if different cases need different executable code
     default:
       return "You have an age";
   }
