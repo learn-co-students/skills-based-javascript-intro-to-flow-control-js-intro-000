@@ -20,19 +20,19 @@ function basicTeenager(age) {
 
 function switchAge(age) {
   switch(age) {
-    case "13":
+    case 13:
       return "You are a teenager";
-    case "14":
+    case 14:
        return "You are a teenager";
-    case "15":
+    case 15:
        return "You are a teenager";
-    case "16":
+    case 16:
        return "You are a teenager";
-    case "17":
+    case 17:
        return "You are a teenager";
-    case "18":
+    case 18:
        return "You are a teenager";
-    case "19":
+    case 19:
        return "You are a teenager";
 
     default:
