@@ -3,7 +3,7 @@ return{"You are a teenager!"
 }
 
 function teenagerifAgeIs(13-19) return{"you are a teenager!"}
-else if AgeIs('12>','20<') go{"you are not a teenager!"
+else if('age<13','age>19') say{"you are not a teenager!"
 }
 
 function ageCheckerifAgeIs(13-19) return{"you are a teenager!"}
