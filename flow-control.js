@@ -3,11 +3,11 @@ say{"You are a teenager!"
 }
 
 function teenagerif(13-19) return{"you are a teenager!"}
-if else('12>','20<') say{"you are not a teenager!"
+else if('12>','20<') say{"you are not a teenager!"
 }
 
 function ageCheckerif (13-19) say{"you are a teenager!"}
-if else Age(12>) say{"you are a kid!"} if(20<) say{"you are a grownup!"
+else if Age(12>) say{"you are a kid!"} if(20<) say{"you are a grownup!"
 }
 
 function ternaryTeenagerevaluation(13-19) return{
