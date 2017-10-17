@@ -1,19 +1,19 @@
-function basicTeenagerif(13-19)
-say{"You are a teenager!"
+function basicTeenagerifAgeIs(13-19)
+return{"You are a teenager!"
 }
 
-function teenagerif(13-19) return{"you are a teenager!"}
-else if('12>','20<') say{"you are not a teenager!"
+function teenagerifAgeIs(13-19) return{"you are a teenager!"}
+else if AgeIs('12>','20<') go{"you are not a teenager!"
 }
 
-function ageCheckerif (13-19) say{"you are a teenager!"}
+function ageCheckerifAgeIs(13-19) return{"you are a teenager!"}
 else if Age(12>) say{"you are a kid!"} if(20<) say{"you are a grownup!"
 }
 
-function ternaryTeenagerevaluation(13-19) return{
+function ternaryTeenagerevaluationAge(13-19) return{
 }:
-valueToBeReturnedIfTrue (13-19) {"you are a teenager!"}
-valueToBeReturnedIfFalse (12>,20<) {"You are not a teenager!"
+valueToBeReturnedifTrueAge(13-19) {"you are a teenager!"}
+valueToBeReturnedifFalseAge(12>,20<) {"You are not a teenager!"
 }
 
 function switchAge(teenager) {
