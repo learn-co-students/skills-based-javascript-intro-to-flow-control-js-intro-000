@@ -1,4 +1,4 @@
-function if (Age=13-14-15-16-17-18-19){return = "You are a teenager!";
+function if (basicTeenager=13-14-15-16-17-18-19){return = "You are a teenager!";
 }
 else if(Age<13-Age>19) {say"you are not a teenager!";
 }
@@ -6,7 +6,7 @@ ageCheckerifAgeIs(13-19) return{"you are a teenager!";
 }
 else if (Age<13) {say"you are a kid!";} if(Age>19) {say"you are a grownup!";
 }
-function ternaryTeenagerevaluationAge(13-19) return{
+function ternaryTeenagerevaluationAge(13-19) {return
 }:
 valueToBeReturnedifTrueAge(13-19) {"you are a teenager!";
 }
