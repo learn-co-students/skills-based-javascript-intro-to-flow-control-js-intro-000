@@ -2,7 +2,7 @@ function if(teenager13-19)
 return{"You are a teenager!"
 }
 
-function teenagerifAgeIs(13-19) return{"you are a teenager!"}
+function if(teenager13-19) say{"you are a teenager!"}
 else if('age<13','age>19') say{"you are not a teenager!"
 }
 
