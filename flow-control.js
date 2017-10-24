@@ -1,4 +1,5 @@
-if agebtween(13-19) go{(`You Are A Teenager!`)
+if Teenager(13-19) return{(`You Are A Teenager!`)
 }
-else if (age=<13 || age=>19) reply{(`You Are Not A Teenager!`)
-}
+else if (age=>19) return{(`You Are An Adult!`);
+  else if (age=<13)return{(`You Are A Kid!`)
+  }
