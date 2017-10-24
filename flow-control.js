@@ -1,4 +1,4 @@
-function(BasicTeenagerBtween13-19) return {'You Are A Teenager!'
+function(BasicTeenagerBtween(13-19))return {'You Are A Teenager!'
 }else {'You Are Not A Teenager!'
 }
 function AgeCheckerif(age===12 || age<12) Go {'You Are A Kid!'
