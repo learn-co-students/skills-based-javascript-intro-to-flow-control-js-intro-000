@@ -1,9 +1,7 @@
-function(BasicTeenagerBtween(13-19))return {('You Are A Teenager!')
-}else {('You Are Not A Teenager!')
+var basicTeenager =13-19;
+if(basicTeenager 13-19){
+  console.log('you\'re a Teenager!');
 }
-function AgeCheckerif(age===12 || age<12) Go {('You Are A Kid!')
-}else if(age>19) Go {('You Are An Adult!')
+else {
+  console.log('you are not a Teenager');
 }
-function (ternaryTeenager 13-19){('13-19')}
-ValueToBeReturned (True){('You Are A Teenager!')}
-ValueToBeReturned (False){('You Are Not A Teenager!')}
