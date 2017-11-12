@@ -1,5 +1,5 @@
-function basicTeenager(if 13-19){
+function basicTeenagerif(13-19, age<=12, age=>19){
   console.log('You\'re a teenager!'
-  + 13-19);
+  + 13-19 + age<=12 + age=>19);
 }
-basicTeenager('if btween 13-19 of age');
+basicTeenagerif('btween 13-19', "you\'re a kid!","you\'re a grownup!");
