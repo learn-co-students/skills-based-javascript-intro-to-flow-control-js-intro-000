@@ -1,19 +1,5 @@
-function basicTeenager(age) {
-
+function basicTeenagerif=(13-19, age<=12, age=>19){
+  console.log('You\'re a teenager!'
+  + 13-19 + age<=12 + age=>19);
 }
-
-function teenager(age) {
-
-}
-
-function ageChecker(age) {
-
-}
-
-function ternaryTeenager(age) {
-
-}
-
-function switchAge(age) {
-
-}
+basicTeenagerif=('btween 13-19', "you\'re a kid!","you\'re a grownup!");
