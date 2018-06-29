@@ -10,7 +10,7 @@ function teenager(age) {
 if (age >= 13 && age <= 19) {
   return "You are a teenager!";
 } else {
-  return "You are a teenager";
+  return "You are not a teenager";
 }
 }
 
@@ -29,9 +29,9 @@ function ternaryTeenager(age) {
 
   var answer;
   age >= 13 && age <= 19? (
-    answer = "You are not a teenager"
-  ) : (
     answer = "You are a teenager"
+  ) : (
+    answer = "You are not a teenager"
   );
   return answer;
 }
