@@ -21,7 +21,10 @@ function ageChecker(age) {
   else {
     if(age <13)
     return "You are a kid";
-    if(age >20)
+    //revised from >20 below
+    //also from solution it implies I do not need >19 because the only option left is if it is not <19 after the <13
+    if(age >19)
+    //if(age >20)
     return "You are a grownup";
   }
   // else if {
