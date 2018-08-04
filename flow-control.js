@@ -1,6 +1,6 @@
 function basicTeenager(age) {
   if (age===13){
-    basicTeenager ("You are basic Teenager");
+    basicTeenager ("You are Basic Teenager");
   } else{
     
   }
@@ -17,7 +17,7 @@ function teenager(age) {
 
 
 function ageChecker(age) {
-  if (age ===12){
+  if (age <=12){
     ageChecker("You ar a kid");
     } else {
       
@@ -26,7 +26,7 @@ function ageChecker(age) {
 }
 
 function ternaryTeenager(age) {
-  if (age===29){
+  if (age>=19){
     ternaryTeenager("You are not a kid");
   } else {
     
