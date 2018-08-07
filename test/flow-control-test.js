@@ -11,6 +11,7 @@ describe('flow-control', () => {
     jsdom.env('<div></div>', [src], (err, window) => {
       if (err) {
         return done(err)
+          console.log('You are a teenager!')
       }
 
       Object.keys(window).forEach(key => {
