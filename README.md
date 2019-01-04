@@ -7,7 +7,7 @@
 + Write `switch` statements in JS
 
 ## About
-
+5===5
 Sometimes, we only want to allow the execution of code under certain conditions.
 
 Think of it this way. When you're driving a car, you can only go through a light **if** the light is green. **Otherwise**, if the light is yellow, you prepare to slow down; and if the light is red, you stop. Notice that we have distinct cases that we want to check for.
