@@ -1,16 +1,20 @@
-function basicTeenager(13) { 
+function basicTeenager(13) {
   return("You are a teenager")
   console.log()
 
 }
-else if
+if
 
 function teenager(age) {
 
 }
+else if (true) {
 
+}
 function ageChecker(age) {
-
+else {
+  
+}
 }
 
 function ternaryTeenager(age) {
