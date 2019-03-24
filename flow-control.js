@@ -1,7 +1,3 @@
-if(conditionToTest) { // executed if 'conditionToTest' is truthy
-} else { // executed if 'conditionToTest' is falsey
-}
-
 function basicTeenager(age) {
     if(age >= 13 && age <= 19) {
        return 'You are a teenager!'
