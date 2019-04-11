@@ -1,4 +1,4 @@
-function basicTeenager(age) {
+ helllllloooooooooooo function basicTeenager(age) {
 
 }
 
