@@ -1,19 +1,19 @@
-function basicTeenager(age) {
+function basicTeenager() {
 
 }
 
-function teenager(age) {
+function teenager() {
 
 }
 
-function ageChecker(age) {
+function ageChecker() {
 
 }
 
-function ternaryTeenager(age) {
+function ternaryTeenager() {
 
 }
 
-function switchAge(age) {
+function switchAge() {
 
 }
