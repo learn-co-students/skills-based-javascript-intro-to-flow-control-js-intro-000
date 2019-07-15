@@ -33,5 +33,8 @@
     "mocha": "^2.4.5",
     "mocha-multi": "^0.9.0",
     "node-inspector": "^0.12.8"
+  },
+  "dependencies": {
+    "pug": "^2.0.4"
   }
 }
