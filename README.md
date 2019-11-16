@@ -1,3 +1,5 @@
+
+
 # JavaScript Flow Control
 
 ## Objectives
@@ -19,6 +21,8 @@ In programming, when we check for a statement in this way, we check to see wheth
 The example above might be written, in pseudo-JavaScript (for once, this won't work in the browser console), like this:
 
 ``` javascript
+
+var lightIsRed = 'teenager';
 if (lightIsGreen) {
   go()
 } else if (lightIsRed) {
