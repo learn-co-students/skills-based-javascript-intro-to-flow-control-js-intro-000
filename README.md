@@ -141,6 +141,15 @@ They work as the name implies: _if_ `something` is _truthy_ (so the boolean `tru
 Now, in `flow-control.js` let's write a function called `basicTeenager` that accepts an age as a parameter. The function should contain an if-statement that checks to see if the age is a teenager. If the age is between 13 and 19, return `"You are a teenager!"`
 
 ### `if`-`else` Statements
+function basicTeenager(age)
+{
+  if(age>=13 || age <=19)
+  {
+    return "You are a teenager"
+  }
+
+}
+basicTeenager(15);
 
 You will often see an `if` statement used in combination with an  `else` clause. An `else` clause will only get executed if the previous `if` statement is falsey.
 
@@ -299,6 +308,7 @@ In the example above, we'll see `"You should eat a big chocolate cake"` printed 
 As with any function, `return` will halt execution at any point. Thus if we
 wrote,
 
+
 ```javascript
 function feelings(mood) {
   switch(mood) {
@@ -316,6 +326,50 @@ the `console.log()` statement at the bottom of the function will
 _never run_. This is a major difference between `return` and `break`:
 `return` _exits_ the function and _returns_ a value; `break` exits a
 _block_ and does not (generally speaking) have a value associated with it.
+function basicTeenager(age){
+
+  function basicTeenager(age) {
+  if (age >= 13 && age <= 19) {
+    return "You are a teenager!";
+  }
+}
+
+function teenager(age){
+  if (age >= 13 && age <= 19) {
+    return "You are a teenager!";
+  } else {
+    return "You are not a teenager";
+  }
+}
+
+function ageChecker(age){
+  if (age >= 13 && age <= 19) {
+    return "You are a teenager!";
+  } else if (age < 13) {
+    return "You are a kid";
+  } else {
+    return "You are a grownup";
+  }
+}
+
+function ternaryTeenager(age){
+  return age >= 13 && age <= 19 ? "You are a teenager" : "You are not a teenager"
+}
+
+function switchAge(age){
+  switch (age) {
+  case 13:
+  case 14:
+  case 15:
+  case 16:
+  case 17:
+  case 18:
+  case 19:
+    return "You are a teenager";
+  default:
+    return "You have an age"
+  }
+}
 
 ## Resources
 
