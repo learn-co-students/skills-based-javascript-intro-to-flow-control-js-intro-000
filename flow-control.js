@@ -33,17 +33,11 @@ function switchAge(age) {
   var response = "You are a teenager"
   switch (age) {
     case 13 :
-      return response
     case 14 :
-      return response
     case 15 :
-      return response
     case 16 :
-      return response
     case 17 :
-      return response
     case 18 :
-      return response
     case 19 :
       return response
     default :
