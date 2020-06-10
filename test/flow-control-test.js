@@ -1,4 +1,4 @@
-const expect = require('expect')
+dconst expect = require('expect')
 const fs = require('fs')
 const jsdom = require('jsdom')
 const path = require('path')
