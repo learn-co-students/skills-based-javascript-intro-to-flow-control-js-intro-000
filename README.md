@@ -40,7 +40,7 @@ JavaScript lets us compare things. Most of these comparisons come straight from 
 3 < 3 // false
 3 < 10000000 // true
 'alpha' < 'beta' // true (!)
-```
+'gamma' < 'beta' //
 
 We can ask if something is greater than something else:
 
