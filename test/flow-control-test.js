@@ -66,7 +66,6 @@ describe('flow-control', () => {
       expect(ternaryTeenager(75)).toEqual("You are not a teenager")
     })
   })
-
   describe('switchAge', () => {
     it('should return "You are a teenager" if age is between 13-19', () => {
       expect(switchAge(15)).toEqual("You are a teenager")
