@@ -25,27 +25,27 @@ return (age <=19 && age >=13) ? "You are a teenager" : "You are not a teenager"
 
 function switchAge(age) {
 switch (age)
-age "13": {
-return ("You are a teenager"); }
+case 13: // age=13
+return "You are a teenager"; // code to be executed if case 13 is true
 break;
-age "14": {
-return ("You are a teenager"); }
+case 14: // age=14
+return "You are a teenager"; // code to be executed if case 14 is true
 break;
-age "15": {
-return ("You are a teenager"); }
+case 15: // age=15
+return "You are a teenager"; // code to be executed if case 15 is true
 break;
-age "16": {
-return ("You are a teenager"); }
+case 16: // age=16
+return "You are a teenager"; // code to be executed if case 16 is true
 break;
-age "17": {
-return ("You are a teenager"); }
+case 17: // age=17
+return "You are a teenager"; // code to be executed if case 17 is true
 break;
-age "18": {
-return ("You are a teenager"); }
+case 18: // age=18
+return "You are a teenager"; // code to be executed if case 18 is true
 break;
-age "19": {
-return ("You are a teenager"); }
+case 19: // age=19
+return "You are a teenager"; // code to be executed if case 19 is true
 break;
-default: {
-return ("You have an age"); }
+default: // all other cases
+return "You have an age"; // code to be executed if all cases are false
 }
