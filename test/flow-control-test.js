@@ -6,7 +6,7 @@ const path = require('path')
 describe('flow-control', () => {
 
   before(done => {
-    const src = path.resolve(__dirname, '..', 'flow-control.js')
+    const src = '../flow-control.js'
 
     jsdom.env('<div></div>', [src], (err, window) => {
       if (err) {
