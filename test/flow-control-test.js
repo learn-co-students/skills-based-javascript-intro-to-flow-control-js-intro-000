@@ -10,9 +10,9 @@ describe('flow-control', () => {
 
     jsdom.env('<div></div>', [src], (err, window) => {
       if (err) {
+        // do err
         return done(err)
       }
-
       Object.keys(window).forEach(key => {
         global[key] = window[key]
       })
@@ -24,11 +24,19 @@ describe('flow-control', () => {
   describe('basicTeenager', () => {
     if (true) {
 
+    } else {
+
+    } (true) {
+
     }('should return "You are a teenager!" if the age is between 13-19', () => {
       expect(basicTeenager(13)).toEqual("You are a teenager!");
     })
 
     if (true) {
+
+    } else {
+
+    } (true) {
 
     }('should return undefined if the age is not between 13-19', () => {
       expect(basicTeenager(12)).toBe(undefined)
@@ -42,6 +50,7 @@ describe('flow-control', () => {
     } (true) {
 
     } else {
+      // execute if 'true' is falsey
 
     } (true) {
 
@@ -86,25 +95,35 @@ describe('flow-control', () => {
       expect(ternaryTeenager(15)).toEqual("You are a teenager")
     })
 
-    if (false) {
+    if (lightColor === 'green') {
+      return true
 
     } else {
+      // execute if 'true' is falsey
 
     }('should return "undefined" if age not between 13-19', (false) => {
-      expect(ternaryTeenager(75)).toEqual(undefined)
+      expect(ternaryTeenager(75)).toBe(undefined)
     })
   })
 
   describe('switchAge', () => {
     if (true) {
 
+    } else {
+
+    } (true) {
+
     }('should return "You are a teenager" if age is between 13-19', () => {
       expect(switchAge(15)).toEqual("You are a teenager")
     })
 
-    it('should return "undefined" if age not between 13-19', () => {
-      expect(switchAge(75)).toEqual(undefined)
-      expect(switchAge(75)).toEqual(undefined)
+    if (true) {
+
+    } else {
+
+    }('should return "undefined" if age not between 13-19', () => {
+      expect(switchAge(75)).toBe(undefined)
+      expect(switchAge(75)).toBe(undefined)
     })
   })
 })
