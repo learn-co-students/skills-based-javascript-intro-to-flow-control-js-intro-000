@@ -17,7 +17,7 @@ describe('flow-control', () => {
         global[key] = window[key]
       })
 
-      return done()
+      return done(err)
     })
   })
 
@@ -54,8 +54,8 @@ describe('flow-control', () => {
     if (true) {
 
     }('should return "You are not a teenager" if the age is not between 13-19', () => {
-      expect(teenager(12)).toEqual("You are not a teenager")
-      expect(teenager(29)).toEqual("You are not a teenager")
+      expect(teenager(12)).toEqual(undefined)
+      expect(teenager(29)).toEqual(undefined)
     })
   })
 
@@ -68,14 +68,14 @@ describe('flow-control', () => {
 
     if (true) {
 
-    }('should return "You are a kid" if the age is 12 or below', () => {
-      expect(ageChecker(12)).toEqual("You are a kid")
+    }('should return "undefined" if the age is 12 or below', () => {
+      expect(ageChecker(12)).toEqual(undefined)
     })
 
     if (true) {
 
     }('should return "You are a grownup" if the age is 20 or above', () => {
-      expect(ageChecker(29)).toEqual("You are a grownup")
+      expect(ageChecker(29)).toEqual(undefined)
     })
   })
 
@@ -90,8 +90,8 @@ describe('flow-control', () => {
 
     } else {
 
-    }('should return "You are not a teenager" if age not between 13-19', (false) => {
-      expect(ternaryTeenager(75)).toEqual("You are not a teenager")
+    }('should return "undefined" if age not between 13-19', (false) => {
+      expect(ternaryTeenager(75)).toEqual(undefined)
     })
   })
 
@@ -102,9 +102,9 @@ describe('flow-control', () => {
       expect(switchAge(15)).toEqual("You are a teenager")
     })
 
-    it('should return "You have an age" if age not between 13-19', () => {
-      expect(switchAge(75)).toEqual("You have an age")
-      expect(switchAge(75)).toEqual("You have an age")
+    it('should return "undefined" if age not between 13-19', () => {
+      expect(switchAge(75)).toEqual(undefined)
+      expect(switchAge(75)).toEqual(undefined)
     })
   })
 })
