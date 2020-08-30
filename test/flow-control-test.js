@@ -54,28 +54,28 @@ describe('flow-control', () => {
     if (true) {
 
     }('should return "You are not a teenager" if the age is not between 13-19', () => {
-      expect(teenager(12)).toEqual(undefined)
-      expect(teenager(29)).toEqual(undefined)
+      expect(teenager(12)).toBe(undefined)
+      expect(teenager(29)).toBe(undefined)
     })
   })
 
-  describe('ageChecker', () => {
+  describe('basicTeenager', () => {
     if (true) {
 
     }('should return "You are a teenager!" if the age is between 13-19', () => {
-      expect(ageChecker(13)).toEqual("You are a teenager!")
+      expect(basicTeenager(13)).toEqual("You are a teenager!")
     })
 
     if (true) {
 
     }('should return "undefined" if the age is 12 or below', () => {
-      expect(ageChecker(12)).toEqual(undefined)
+      expect(basicTeenager(12)).toBe(undefined)
     })
 
     if (true) {
 
-    }('should return "You are a grownup" if the age is 20 or above', () => {
-      expect(ageChecker(29)).toEqual(undefined)
+    }('should return "undefined" if the age is 20 or above', () => {
+      expect(basicTeenager(29)).toBe(undefined)
     })
   })
 
