@@ -141,6 +141,11 @@ They work as the name implies: _if_ `something` is _truthy_ (so the boolean `tru
 Now, in `flow-control.js` let's write a function called `basicTeenager` that accepts an age as a parameter. The function should contain an if-statement that checks to see if the age is a teenager. If the age is between 13 and 19, return `"You are a teenager!"`
 
 ### `if`-`else` Statements
+function basicTeenager(age) {
+  let age = 15
+} if (age < 19 ) {
+return "You are a teenager!"
+}
 
 You will often see an `if` statement used in combination with an  `else` clause. An `else` clause will only get executed if the previous `if` statement is falsey.
 
