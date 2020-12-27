@@ -5,8 +5,18 @@
 + Write `if`-`else if`-`else` statements in JS
 + Use the ternary operator in JS
 + Write `switch` statements in JS
-
+'alpha' < 'beta' // true (!)
+'gamma' > 'beta' // true (!)
+20 <= 30 // true
+20 <= 20 // true
+20 <= 10 // false
+5>= 5 // true
+5 >= 1 // true
+5 >= 10// false
+if (something) { // do something}
 ## About
+canGo ('green') // true
+canGo ('red') // false
 
 Sometimes, we only want to allow the execution of code under certain conditions.
 
