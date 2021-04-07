@@ -1,7 +1,7 @@
 # JavaScript Flow Control
 
 ## Objectives
-+ Write `if` statements in JS
++  `if` statements in JS
 + Write `if`-`else if`-`else` statements in JS
 + Use the ternary operator in JS
 + Write `switch` statements in JS
