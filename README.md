@@ -296,6 +296,8 @@ In the example above, we'll see `"You should eat a big chocolate cake"` printed 
 
 + Define a function `switchAge` that accepts an age as a parameter. The case statement should switch on `age` and return `"You are a teenager"` if the age is 13, 14, 15, 16, 17, 18, or 19, and return `"You have an age"` as the default.
 
+
+
 As with any function, `return` will halt execution at any point. Thus if we
 wrote,
 
